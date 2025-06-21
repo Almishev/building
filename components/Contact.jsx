@@ -69,7 +69,7 @@ const Contact = () => {
                     </h5>
                     <p className="mb-4">Понеделник - Петък, от 8:00 до 17:00 ч.</p>
                     <p className="font-semibold text-primary">
-                      +359 888 000 000
+                      0894320214
                     </p>
                   </div>
                 </div>

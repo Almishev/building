@@ -9,25 +9,25 @@ const workData = [
     img: "/assets/img/work/construction.jpg",
     name: "Индустриални халета",
     description: "Мащабни проекти за бизнеса",
-    href: "",
+    href: "/projects/industrial-halls",
   },
   {
     img: "/assets/img/work/consulting.jpg",
     name: "Търговски площи",
     description: "Гладки подове за вашите клиенти",
-    href: "",
+    href: "/projects/commercial-spaces",
   },
   {
     img: "/assets/img/work/renovation.jpg",
     name: "Жилищни проекти",
     description: "Модерни решения за дома",
-    href: "",
+    href: "/projects/residential-projects",
   },
   {
     img: "/assets/img/work/restoration.jpg",
     name: "Декоративни настилки",
     description: "Естетика и здравина в едно",
-    href: "",
+    href: "/projects/decorative-coatings",
   },
 ];
 
