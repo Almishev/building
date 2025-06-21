@@ -5,8 +5,6 @@ import Image from "next/image";
 import Button from "./Button";
 
 import {
-  PiWallFill,
-  PiPaintRollerFill,
   PiWrenchFill,
   PiUserGearFill,
 } from "react-icons/pi";
@@ -14,79 +12,79 @@ import Pretitle from "./Pretitle";
 
 const serviceData = [
   {
-    name: "construction",
-    icon: <PiWallFill />,
-    title: "Construction Services",
-    description:
-      "We build with precision and innovation, ensuring that every structure is strong, reliable, and built to last. From foundations to finishing touches, our expertise transforms ideas into reality.",
-    serviceList: [
-      "Residential Builds",
-      "Structural Design",
-      "Site Prep",
-      "Concrete Work",
-      "Framing & Roofing",
-      "Interior Finish",
-    ],
-    thumbs: [
-      { url: "/assets/img/services/thumb-1.jpg" },
-      { url: "/assets/img/services/thumb-2.jpg" },
-    ],
-  },
-  {
-    name: "renovation",
-    icon: <PiPaintRollerFill />,
-    title: "Renovation Services",
-    description:
-      "Revitalizing spaces with modern designs and high-quality craftsmanship. Whether upgrading a home or remodeling an office, we bring fresh life to every project.",
-    serviceList: [
-      "Kitchen Remodel",
-      "Basement Finish",
-      "Flooring",
-      "Energy Upgrades",
-      "Carpentry",
-      "Painting",
-    ],
-    thumbs: [
-      { url: "/assets/img/services/thumb-3.jpg" },
-      { url: "/assets/img/services/thumb-4.jpg" },
-    ],
-  },
-  {
-    name: "restoration",
-    icon: <PiWrenchFill />,
-    title: "Restoration Services",
-    description:
-      "Bringing damaged or aging structures back to life. We specialize in restoring historical landmarks, fire-damaged buildings, and water-damaged properties with meticulous care.",
-    serviceList: [
-      "Historic Restore",
-      "Water Damage",
-      "Fire Repair",
-      "Structural Fix",
-      "Mold Removal",
-      "Roof Restore",
-    ],
-    thumbs: [
-      { url: "/assets/img/services/thumb-4.jpg" },
-      { url: "/assets/img/services/thumb-5.jpg" },
-    ],
-  },
-  {
-    name: "consulting",
+    name: "Хеликоптери",
     icon: <PiUserGearFill />,
-    title: "Consulting Services",
+    title: "Хеликоптери с оператор (двойни)",
     description:
-      "Providing expert guidance for construction and renovation projects. From planning and budgeting to compliance and sustainability, our consulting service ensure project success.",
+      "Нашите мощни хеликоптери с оператор са предназначени за обработка на големи индустриални площи. Те осигуряват несравнима производителност и перфектно гладка повърхност.",
     serviceList: [
-      "Project Plans",
-      "Costing",
-      "Site Management",
-      "Permits",
-      "Sustainability",
-      "Safety",
+      "Шлайфане на големи площи",
+      "Висока производителност",
+      "Индустриални складове",
+      "Търговски центрове",
+      "Подземни паркинги",
+      "Бързо изпълнение",
     ],
     thumbs: [
+      { url: "/assets/img/services/ride-on-trowel.jpg" },
       { url: "/assets/img/services/thumb-1.jpg" },
+    ],
+  },
+  {
+    name: "Ръчни машини",
+    icon: <PiWrenchFill />,
+    title: "Ръчноводими шлайф машини",
+    description:
+      "За по-малки площи, ръбове и труднодостъпни места използваме прецизни ръчноводими машини. Те гарантират внимание към детайла и безупречен финиш навсякъде.",
+    serviceList: [
+      "Обработка на ъгли и ръбове",
+      "Прецизно шлайфане и полиране",
+      "Жилищни площи и гаражи",
+      "Ремонтни дейности",
+      "Мозайки и декоративни бетони",
+      "Премахване на стари покрития",
+    ],
+    thumbs: [
+      { url: "/assets/img/services/walk-behind-grinder.jpg" },
       { url: "/assets/img/services/thumb-3.jpg" },
+    ],
+  },
+  {
+    name: "Решения",
+    icon: <PiWrenchFill />,
+    title: "Цялостни решения за индустриални подове",
+    description:
+      "От първоначалната подготовка до финалното запечатване, ние предлагаме цялостни решения, съобразени с вашите нужди и спецификата на обекта. Доверете се на нашия опит.",
+    serviceList: [
+      "Анализ на състоянието",
+      "Подготовка на основата",
+      "Избор на технология",
+      "Цялостно изпълнение",
+      "Контрол на качеството",
+      "Гаранционно обслужване",
+    ],
+    thumbs: [
+      { url: "/assets/img/services/thumb-2.jpg" },
+      { url: "/assets/img/services/thumb-4.jpg" },
+    ],
+  },
+  {
+    name: "Консултации",
+    icon: <PiUserGearFill />,
+    title: "Консултации и изготвяне на оферта",
+    description:
+      "Всеки проект започва с добра идея и ясен план. Нашият екип ще ви консултира за най-подходящите технологии и материали и ще изготви детайлна оферта без ангажимент.",
+    serviceList: [
+      "Безплатен оглед на място",
+      "Техническа консултация",
+      "Индивидуална оферта",
+      "Оптимизация на разходите",
+      "Професионални съвети",
+      "Дългосрочно партньорство",
+    ],
+    thumbs: [
+      { url: "/assets/img/services/thumb-5.jpg" },
+      { url: "/assets/img/services/thumb-6.jpg" },
     ],
   },
 ];
@@ -100,7 +98,7 @@ const fadeInVariant = {
 };
 
 const Services = () => {
-  const [activeTab, setActiveTab] = useState("construction");
+  const [activeTab, setActiveTab] = useState("Хеликоптери");
   return (
     <section className="pt-16 xl:pt-32" id="services">
       <div className="container mx-auto">
@@ -111,11 +109,12 @@ const Services = () => {
           viewport={{ once: false, amount: 0.2 }}
           className="text-center max-w-[540px] mx-auto mb-20"
         >
-          <Pretitle text="Our Services" center />
-          <h2 className="h2 mb-3">Solutions We Provide</h2>
+          <Pretitle text="Нашите Услуги" center />
+          <h2 className="h2 mb-3">Технологии за перфектния под</h2>
           <p className="mb-11 max-w-[480px] mx-auto">
-            Offering tailored construction solutions, from planning to
-            completion, with a focus on quality and innovation.
+            Разполагаме с модерно оборудване за шлайфане и полиране на бетон,
+            което ни позволява да изпълняваме проекти с всякакъв мащаб и
+            сложност.
           </p>
         </motion.div>
 
@@ -127,11 +126,11 @@ const Services = () => {
           viewport={{ once: false, amount: 0.2 }}
         >
           <Tabs
-            defaultValue="construction"
+            defaultValue="Хеликоптери"
             onValueChange={(value) => setActiveTab(value)}
             className="flex flex-col xl:flex-row w-full gap-[30px]"
           >
-            <TabsList className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 gap-[30px] h-full w-full rounded-none p-0 bg-transparent xl:w-[345px]">
+            <TabsList className="grid grid-cols-1 gap-[30px] h-full w-full rounded-none p-0 bg-transparent xl:max-w-[345px]">
               {serviceData.map((item) => {
                 return (
                   <TabsTrigger
@@ -148,7 +147,7 @@ const Services = () => {
                     >
                       <div className="text-4xl">{item.icon}</div>
                     </div>
-                    <div className="uppercase font-primary text-base font-semibold tracking-[.6px] w-[100px] ml-16">
+                    <div className="uppercase font-primary text-base font-semibold tracking-[.6px] ml-[120px] text-left">
                       {item.name}
                     </div>
                   </TabsTrigger>
@@ -199,7 +198,7 @@ const Services = () => {
                           })}
                         </ul>
                         {/* btn */}
-                        <Button text="Read more" />
+                        <Button text="Научете повече" />
                       </div>
                     </div>
                   </motion.div>

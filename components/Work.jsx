@@ -6,27 +6,27 @@ import { RiArrowRightUpLine, RiCheckboxCircleFill } from "react-icons/ri";
 
 const workData = [
   {
-    img: "/assets/img/work/restoration.jpg",
-    name: "restoration",
-    description: "Your short description",
-    href: "",
-  },
-  {
     img: "/assets/img/work/construction.jpg",
-    name: "construction",
-    description: "Your short description",
-    href: "",
-  },
-  {
-    img: "/assets/img/work/renovation.jpg",
-    name: "renovation",
-    description: "Your short description",
+    name: "Индустриални халета",
+    description: "Мащабни проекти за бизнеса",
     href: "",
   },
   {
     img: "/assets/img/work/consulting.jpg",
-    name: "consulting",
-    description: "Your short description",
+    name: "Търговски площи",
+    description: "Гладки подове за вашите клиенти",
+    href: "",
+  },
+  {
+    img: "/assets/img/work/renovation.jpg",
+    name: "Жилищни проекти",
+    description: "Модерни решения за дома",
+    href: "",
+  },
+  {
+    img: "/assets/img/work/restoration.jpg",
+    name: "Декоративни настилки",
+    description: "Естетика и здравина в едно",
     href: "",
   },
 ];
@@ -45,11 +45,11 @@ const Work = () => {
           viewport={{ once: false, amount: 0.2 }}
           className="text-center max-w-[540px] mx-auto xl:mb-20"
         >
-          <Pretitle text="Our work" center />
-          <h2 className="h2 mb-3">Discover Our Projects</h2>
+          <Pretitle text="Наши обекти" center />
+          <h2 className="h2 mb-3">Разгледайте нашите проекти</h2>
           <p className="mb-11 max-w-[480px] mx-auto">
-            Providing expert services designer to deliver quality and innovation
-            in every project we undertake.
+            Гордеем се с всеки завършен обект и вниманието към детайла, което
+            влагаме. Вижте част от нашите реализирани проекти.
           </p>
         </motion.div>
       </div>
