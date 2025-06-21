@@ -3,10 +3,12 @@ import { useState } from "react";
 import { Tabs, TabsList, TabsContent, TabsTrigger } from "@/components/ui/tabs";
 import Image from "next/image";
 import Button from "./Button";
+import Link from "next/link";
 
 import {
   PiWrenchFill,
   PiUserGearFill,
+  PiScrewdriverFill,
 } from "react-icons/pi";
 import Pretitle from "./Pretitle";
 
@@ -17,6 +19,7 @@ const serviceData = [
     title: "Хеликоптери с оператор (двойни)",
     description:
       "Нашите мощни хеликоптери с оператор са предназначени за обработка на големи индустриални площи. Те осигуряват несравнима производителност и перфектно гладка повърхност.",
+    path: "/services/helicopters",
     serviceList: [
       "Шлайфане на големи площи",
       "Висока производителност",
@@ -36,6 +39,7 @@ const serviceData = [
     title: "Ръчноводими шлайф машини",
     description:
       "За по-малки площи, ръбове и труднодостъпни места използваме прецизни ръчноводими машини. Те гарантират внимание към детайла и безупречен финиш навсякъде.",
+    path: "/services/hand-grinders",
     serviceList: [
       "Обработка на ъгли, ръбове",
       "Прецизно шлайфане и полиране",
@@ -50,13 +54,34 @@ const serviceData = [
     ],
   },
   {
+    name: "Пердашки",
+    icon: <PiScrewdriverFill />,
+    title: "Ръчноводими пердашки машини",
+    description:
+      "За финалната обработка на прясно положен бетон използваме единични пердашки. Те са идеални за по-малки до средни площи, както и за достигане на места, недостъпни за големите хеликоптери, осигурявайки перфектно гладък и уплътнен завършек.",
+    path: "/services/power-trowels",
+    serviceList: [
+      "Заглаждане на пресен бетон",
+      "Финишна обработка",
+      "По-малки площи и коридори",
+      "Обработка до стени и колони",
+      "Гарантирана равност",
+      "Подготовка за импрегниране",
+    ],
+    thumbs: [
+      { url: "/assets/img/services/perdashka-za-beton.webp" },
+      { url: "/assets/img/services/thumb-6.jpg" },
+    ],
+  },
+  {
     name: "Решения",
     icon: <PiWrenchFill />,
-    title: "Цялостни решения индустриални подове",
+    title: "Цялостни решения за индустриални подове",
     description:
       "От първоначалната подготовка до финалното запечатване, ние предлагаме цялостни решения, съобразени с вашите нужди и спецификата на обекта. Доверете се на нашия опит.",
+    path: "/services/total-solutions",
     serviceList: [
-      "Анализ състоянието",
+      "Анализ на състоянието",
       "Подготовка на основата",
       "Избор на технология",
       "Цялостно изпълнение",
@@ -66,25 +91,6 @@ const serviceData = [
     thumbs: [
       { url: "/assets/img/services/thumb-2.jpg" },
       { url: "/assets/img/services/thumb-4.jpg" },
-    ],
-  },
-  {
-    name: "Консултации",
-    icon: <PiUserGearFill />,
-    title: "Консултации и изготвяне на оферта",
-    description:
-      "Всеки проект започва с добра идея и ясен план. Нашият екип ще ви консултира за най-подходящите технологии и материали и ще изготви детайлна оферта без ангажимент.",
-    serviceList: [
-      "Безплатен оглед на място",
-      "Техническа консултация",
-      "Индивидуална оферта",
-      "Оптимизация на разходите",
-      "Професионални съвети",
-      "Дългосрочно партньорство",
-    ],
-    thumbs: [
-      { url: "/assets/img/services/thumb-5.jpg" },
-      { url: "/assets/img/services/thumb-6.jpg" },
     ],
   },
 ];
@@ -158,50 +164,52 @@ const Services = () => {
             <div className="flex-1 bg-white shadow-custom h-[490px] p-[30px]">
               {serviceData.map((item) => (
                 <TabsContent key={item.name} value={item.name} className="m-0">
-                  <motion.div
-                    variants={fadeInVariant}
-                    initial="hidden"
-                    whileInView="show"
-                    exit="hidden"
-                    className="flex flex-col md:flex-row gap-[30px]"
-                  >
-                    {/* images */}
-                    <div className="flex md:flex-col gap-5 xl:gap-[30px]">
-                      {item.thumbs.map((thumb, index) => (
-                        <div
-                          key={index}
-                          className="relative w-[140px] xl:w-[200px] h-[140px] xl:h-[200px]"
-                        >
-                          <Image src={thumb.url} fill alt="" />
-                        </div>
-                      ))}
-                    </div>
-                    {/* text & button */}
-                    <div>
-                      <div>
-                        <h3 className="h3 mb-6">{item.title}</h3>
-                        <p className="mb-10">{item.description}</p>
-                        {/* service list */}
-                        <ul className="grid grid-cols-2 gap-4 mb-12">
-                          {item.serviceList.map((service, index) => {
-                            return (
-                              <li
-                                key={index}
-                                className="flex items-center gap-4"
-                              >
-                                <div className="w-[6px] h-[6px] bg-accent"></div>
-                                <div className="capitalize font-medium text-primary">
-                                  {service}
-                                </div>
-                              </li>
-                            );
-                          })}
-                        </ul>
-                        {/* btn */}
-                        <Button text="Научете повече" />
+                  <Link href={item.path}>
+                    <motion.div
+                      variants={fadeInVariant}
+                      initial="hidden"
+                      whileInView="show"
+                      exit="hidden"
+                      className="flex flex-col md:flex-row gap-[30px]"
+                    >
+                      {/* images */}
+                      <div className="flex md:flex-col gap-5 xl:gap-[30px]">
+                        {item.thumbs.map((thumb, index) => (
+                          <div
+                            key={index}
+                            className="relative w-[140px] xl:w-[200px] h-[140px] xl:h-[200px]"
+                          >
+                            <Image src={thumb.url} fill alt="" />
+                          </div>
+                        ))}
                       </div>
-                    </div>
-                  </motion.div>
+                      {/* text & button */}
+                      <div>
+                        <div>
+                          <h3 className="h3 mb-6">{item.title}</h3>
+                          <p className="mb-10">{item.description}</p>
+                          {/* service list */}
+                          <ul className="grid grid-cols-2 gap-4 mb-12">
+                            {item.serviceList.map((service, index) => {
+                              return (
+                                <li
+                                  key={index}
+                                  className="flex items-center gap-4"
+                                >
+                                  <div className="w-[6px] h-[6px] bg-accent"></div>
+                                  <div className="capitalize font-medium text-primary">
+                                    {service}
+                                  </div>
+                                </li>
+                              );
+                            })}
+                          </ul>
+                          {/* btn */}
+                          <Button text="Научете повече" />
+                        </div>
+                      </div>
+                    </motion.div>
+                  </Link>
                 </TabsContent>
               ))}
             </div>
