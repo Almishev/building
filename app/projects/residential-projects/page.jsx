@@ -22,7 +22,7 @@ const ResidentialProjectsPage = () => {
           {/* Image */}
           <div className="flex-1">
             <Image
-              src="/assets/img/logo.png" // Placeholder image
+              src="/assets/logo.png" // Placeholder image
               width={550}
               height={450}
               alt="Шлайфан бетон в модерен интериор"
