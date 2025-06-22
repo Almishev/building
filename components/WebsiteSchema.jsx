@@ -4,12 +4,12 @@ export default function WebsiteSchema() {
     "@type": "WebSite",
     "name": "Concrete Company - Парапанов груп",
     "description": "Професионално шлайфане на бетон в София, Пловдив и Благоевград. Хеликоптери, ръчни машини и цялостни решения за индустриални подове.",
-    "url": "https://building-gray.vercel.app",
+    "url": "https://www.concretecompany.online",
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://building-gray.vercel.app/search?q={search_term_string}"
+        "urlTemplate": "https://www.concretecompany.online/search?q={search_term_string}"
       },
       "query-input": "required name=search_term_string"
     },
@@ -18,12 +18,12 @@ export default function WebsiteSchema() {
       "name": "Concrete Company - Парапанов груп",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://building-gray.vercel.app/assets/logo.png"
+        "url": "https://www.concretecompany.online/assets/logo.png"
       }
     },
     "inLanguage": "bg-BG",
     "isAccessibleForFree": true,
-    "copyrightYear": 2024,
+    "copyrightYear": 2025,
     "copyrightHolder": {
       "@type": "Organization",
       "name": "Concrete Company - Парапанов груп"

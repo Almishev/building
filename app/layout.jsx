@@ -23,7 +23,7 @@ const barlow = Barlow({
 });
 
 export const metadata = {
-  title: "Concrete Company - Шлайфане на бетон в София, Пловдив, Благоевград | Парапанов груп",
+  title: "Concrete Company - Шлайфане на бетон",
   description: "Професионално шлайфане на бетон в София, Пловдив и Благоевград. Хеликоптери, ръчни машини и цялостни решения за индустриални подове. Безплатна консултация и оферта.",
   keywords: "шлайфане на бетон, хеликоптери за бетон, ръчни шлайф машини, пердашки за бетон, индустриални подове, София, Пловдив, Благоевград, Парапанов груп",
   authors: [{ name: "Concrete Company - Парапанов груп" }],
@@ -34,14 +34,14 @@ export const metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://building-gray.vercel.app'),
+  metadataBase: new URL('https://www.concretecompany.online'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "Concrete Company - Шлайфане на бетон в София, Пловдив, Благоевград",
     description: "Професионално шлайфане на бетон с модерно оборудване. Хеликоптери, ръчни машини и цялостни решения за индустриални подове.",
-    url: 'https://building-gray.vercel.app',
+    url: 'https://www.concretecompany.online',
     siteName: 'Concrete Company - Парапанов груп',
     locale: 'bg_BG',
     type: 'website',
@@ -73,6 +73,11 @@ export const metadata = {
   },
   verification: {
     google: 'your-google-verification-code',
+  },
+  icons: {
+    icon: '/assets/logo.png',
+    shortcut: '/assets/logo.png',
+    apple: '/assets/logo.png',
   },
 };
 

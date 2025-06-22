@@ -4,9 +4,9 @@ export default function JsonLd() {
     "@type": "LocalBusiness",
     "name": "Concrete Company - Парапанов груп",
     "description": "Професионално шлайфане на бетон в София, Пловдив и Благоевград. Хеликоптери, ръчни машини и цялостни решения за индустриални подове.",
-    "url": "https://building-gray.vercel.app/",
-    "logo": "https://building-gray.vercel.app/assets/logo.png",
-    "image": "https://building-gray.vercel.app/assets/logo.png",
+    "url": "https://www.concretecompany.online",
+    "logo": "https://www.concretecompany.online/assets/logo.png",
+    "image": "https://www.concretecompany.online/assets/logo.png",
     "telephone": "0894320214",
     "email": "infoconcretecompany@gmail.com",
     "address": {

@@ -4,24 +4,24 @@ export default function ContactSchema() {
     "@type": "ContactPage",
     "name": "Контакти - Concrete Company",
     "description": "Свържете се с нас за професионално шлайфане на бетон в София, Пловдив и Благоевград",
-    "url": "https://building-gray.vercel.app/#contact",
+    "url": "https://www.concretecompany.online/#contact",
     "mainEntity": {
       "@type": "Organization",
       "name": "Concrete Company - Парапанов груп",
       "description": "Професионално шлайфане на бетон в западна и централна България",
-      "url": "https://building-gray.vercel.app",
-      "logo": "https://building-gray.vercel.app/assets/logo.png",
+      "url": "https://www.concretecompany.online",
+      "logo": "https://www.concretecompany.online/assets/logo.png",
       "contactPoint": [
         {
           "@type": "ContactPoint",
-          "telephone": "+359-XXX-XXX-XXX",
+          "telephone": "0894320214",
           "contactType": "customer service",
           "areaServed": ["BG"],
           "availableLanguage": ["Bulgarian"]
         },
         {
           "@type": "ContactPoint",
-          "email": "info@concrete-company.bg",
+          "email": "infoconcretecompany@gmail.com",
           "contactType": "customer service",
           "areaServed": ["BG"],
           "availableLanguage": ["Bulgarian"]

@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://building-gray.vercel.app/sitemap.xml
+Sitemap: https://www.concretecompany.online/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1 
