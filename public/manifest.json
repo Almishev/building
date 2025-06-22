@@ -1,0 +1,23 @@
+{
+  "name": "Concrete Company - Парапанов груп",
+  "short_name": "Concrete Company",
+  "description": "Професионално шлайфане на бетон в София, Пловдив и Благоевград",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#fbb040",
+  "icons": [
+    {
+      "src": "/assets/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "lang": "bg",
+  "dir": "ltr"
+} 

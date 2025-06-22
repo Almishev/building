@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import Pretitle from "./Pretitle";
@@ -6,25 +7,25 @@ import { RiArrowRightUpLine, RiCheckboxCircleFill } from "react-icons/ri";
 
 const workData = [
   {
-    img: "/assets/img/work/construction.jpg",
+    img: "/assets/img/work/industrialni-ploshti.jpg",
     name: "Индустриални халета",
     description: "Мащабни проекти за бизнеса",
     href: "/projects/industrial-halls",
   },
   {
-    img: "/assets/img/work/consulting.jpg",
+    img: "/assets/img/work/targovski-ploshti.jpg",
     name: "Търговски площи",
     description: "Гладки подове за вашите клиенти",
     href: "/projects/commercial-spaces",
   },
   {
-    img: "/assets/img/work/renovation.jpg",
+    img: "/assets/img/work/jilishtni-proekti.jpg",
     name: "Жилищни проекти",
     description: "Модерни решения за дома",
     href: "/projects/residential-projects",
   },
   {
-    img: "/assets/img/work/restoration.jpg",
+    img: "/assets/img/work/dekorativni-nastilki.jpg",
     name: "Декоративни настилки",
     description: "Естетика и здравина в едно",
     href: "/projects/decorative-coatings",
@@ -70,7 +71,7 @@ const Work = () => {
                 src={item.img}
                 fill
                 className="object-cover"
-                alt=""
+                alt={`${item.name} - ${item.description} в София, Пловдив, Благоевград`}
                 quality={100}
               />
               <div className="w-[90%] h-[84px] bg-primary absolute bottom-4 flex justify-between items-center text-white md:translate-y-[108px] md:group-hover:translate-y-0 transition-all duration-500">

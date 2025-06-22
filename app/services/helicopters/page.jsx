@@ -2,6 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "@/components/Button";
 
+export const metadata = {
+  title: "Хеликоптери за шлайфане на бетон в София, Пловдив, Благоевград | Concrete Company",
+  description: "Мощни хеликоптери с оператор за шлайфане на големи индустриални площи в София, Пловдив и Благоевград. Висока производителност за складове, търговски центрове и подземни паркинги.",
+  keywords: "хеликоптери за бетон, двойни пердашки, шлайфане на големи площи, индустриални подове, София, Пловдив, Благоевград, бетонови машини",
+  alternates: {
+    canonical: '/services/helicopters',
+  },
+};
+
 const HelicoptersPage = () => {
   const service = {
     title: "Хеликоптери с оператор (двойни)",

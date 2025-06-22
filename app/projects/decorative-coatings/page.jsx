@@ -2,6 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "@/components/Button";
 
+export const metadata = {
+  title: "Декоративни покрития - Шлайфане на бетон в София, Пловдив, Благоевград | Concrete Company",
+  description: "Декоративни покрития и шлайфане на бетон в София, Пловдив и Благоевград. Специализирани решения за естетични бетонови подове и мозайки.",
+  keywords: "декоративни покрития, мозайки, естетични бетонови подове, декоративен бетон, шлайфане на бетон, София, Пловдив, Благоевград",
+  alternates: {
+    canonical: '/projects/decorative-coatings',
+  },
+};
+
 const DecorativeCoatingsPage = () => {
   return (
     <section className="py-12 xl:py-24">

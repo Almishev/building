@@ -1,6 +1,9 @@
+"use client";
 import { RiChat1Line, RiMapPin2Line, RiSmartphoneLine } from "react-icons/ri";
 import Socials from "./Socials";
 import Form from "./Form";
+import Pretitle from "./Pretitle";
+import Button from "./Button";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "@/variants";

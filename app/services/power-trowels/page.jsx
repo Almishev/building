@@ -2,6 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "@/components/Button";
 
+export const metadata = {
+  title: "Пердашки машини за бетон в София, Пловдив, Благоевград | Concrete Company",
+  description: "Ръчноводими пердашки машини за финална обработка на прясно положен бетон в София, Пловдив и Благоевград. Идеални за по-малки площи и коридори.",
+  keywords: "пердашки машини, ръчноводими пердашки, заглаждане на бетон, финална обработка, София, Пловдив, Благоевград, бетонови подове",
+  alternates: {
+    canonical: '/services/power-trowels',
+  },
+};
+
 const PowerTrowelsPage = () => {
   const service = {
     title: "Ръчноводими пердашки машини",

@@ -2,6 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "@/components/Button";
 
+export const metadata = {
+  title: "Ръчни шлайф машини за бетон в София, Пловдив, Благоевград | Concrete Company",
+  description: "Ръчноводими шлайф машини за прецизно обработване на бетон в София, Пловдив и Благоевград. Идеални за ъгли, ръбове и труднодостъпни места.",
+  keywords: "ръчни шлайф машини, ръчноводими машини за бетон, шлайфане на ъгли, полиране на бетон, София, Пловдив, Благоевград, бетонови подове",
+  alternates: {
+    canonical: '/services/hand-grinders',
+  },
+};
+
 const HandGrindersPage = () => {
   const service = {
     title: "Ръчноводими шлайф машини",

@@ -2,6 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "@/components/Button";
 
+export const metadata = {
+  title: "Търговски площи - Шлайфане на бетон в София, Пловдив, Благоевград | Concrete Company",
+  description: "Шлайфане на бетон за търговски площи в София, Пловдив и Благоевград. Специализирани решения за търговски центрове, магазини и офис пространства.",
+  keywords: "търговски площи, търговски центрове, магазини, офис пространства, бетонови подове, шлайфане на бетон, София, Пловдив, Благоевград",
+  alternates: {
+    canonical: '/projects/commercial-spaces',
+  },
+};
+
 const CommercialSpacesPage = () => {
   return (
     <section className="py-12 xl:py-24">

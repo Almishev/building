@@ -1,9 +1,11 @@
+"use client";
 import Image from "next/image";
 import Pretitle from "./Pretitle";
 import Button from "./Button";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "@/variants";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -40,10 +42,12 @@ const About = () => {
                 />
                 */}
                 
-                <p>Шукри Парапанов -  Управител </p>
+                <p>Шукри Парапанов - Управител </p>
               </div>
               {/* btn */}
+              <Link href="#contact">
               <Button text="Свържете се с нас" />
+              </Link>
             </motion.div>
           </div>
           {/* img */}
@@ -61,7 +65,7 @@ const About = () => {
                 src={"/assets/img/about/img.jpg"}
                 width={444}
                 height={492}
-                alt=""
+                alt="Concrete Company - Парапанов груп - Професионално шлайфане на бетон в София, Пловдив, Благоевград"
               />
             </div>
           </motion.div>

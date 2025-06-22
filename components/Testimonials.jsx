@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Button from "./Button";
 import Pretitle from "./Pretitle";
@@ -45,7 +46,7 @@ const Testimonials = () => {
                 fill
                 className="object-cover"
                 quality={100}
-                alt=""
+                alt="Доволни клиенти на Concrete Company - Парапанов груп"
               />
             </div>
             <motion.div
@@ -60,7 +61,7 @@ const Testimonials = () => {
                 src="/assets/img/testimonials/quote.svg"
                 width={54}
                 height={36}
-                alt=""
+                alt="Цитат - Отзиви от клиенти"
                 className="absolute z-20 -top-4 left-[60px]"
               />
               <Slider />

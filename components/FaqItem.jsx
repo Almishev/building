@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import { RiSubtractFill, RiAddFill } from "react-icons/ri";
 

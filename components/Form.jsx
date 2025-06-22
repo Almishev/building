@@ -14,12 +14,16 @@ import Button from "./Button";
 
 const Form = () => {
   return (
-    <form className="flex flex-col">
+    <form 
+      action="https://formsubmit.co/infoconcretecompany@gmail.com" 
+      method="POST" 
+      className="flex flex-col"
+    >
       <div className="flex flex-col gap-[20px] mb-[20px]">
-        <Input type="fullname" placeholder="Име" />
-        <Input type="email" placeholder="Имейл адрес" />
+        <Input type="text" name="name" placeholder="Име" required />
+        <Input type="email" name="email" placeholder="Имейл адрес" required />
         <div className="flex flex-col xl:flex-row gap-[20px]">
-          <Input type="phone" placeholder="Телефон" />
+          <Input type="text" name="phone" placeholder="Телефон" />
           {/*
           <Select>
             <SelectTrigger className="w-full rounded-none h-[54px] text-secondary outline-none">
@@ -42,10 +46,12 @@ const Form = () => {
         {/* textarea */}
         <Textarea
           className="h-[180px] resize-none rounded-none"
+          name="message"
           placeholder="Въведете вашето съобщение"
+          required
         />
         {/* btn */}
-        <Button text="Изпрати">Изпрати</Button>
+        <Button text="Изпрати" type="submit" />
       </div>
     </form>
   );

@@ -2,6 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "@/components/Button";
 
+export const metadata = {
+  title: "Индустриални халета - Шлайфане на бетон в София, Пловдив, Благоевград | Concrete Company",
+  description: "Професионално шлайфане на бетон за индустриални халета в София, Пловдив и Благоевград. Специализирани решения за производствени помещения и складове.",
+  keywords: "индустриални халета, производствени помещения, складове, бетонови подове, шлайфане на бетон, София, Пловдив, Благоевград",
+  alternates: {
+    canonical: '/projects/industrial-halls',
+  },
+};
+
 const IndustrialHallsPage = () => {
   return (
     <section className="py-12 xl:py-24">

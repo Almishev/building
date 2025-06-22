@@ -2,6 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "@/components/Button";
 
+export const metadata = {
+  title: "Цялостни решения за индустриални подове в София, Пловдив, Благоевград | Concrete Company",
+  description: "Цялостни решения за индустриални бетонови подове в София, Пловдив и Благоевград. От подготовка до финално запечатване с гарантирано качество.",
+  keywords: "цялостни решения, индустриални подове, бетонови подове, подготовка на бетон, запечатване на бетон, София, Пловдив, Благоевград",
+  alternates: {
+    canonical: '/services/total-solutions',
+  },
+};
+
 const TotalSolutionsPage = () => {
   const service = {
     title: "Цялостни решения за индустриални подове",
@@ -15,7 +24,7 @@ const TotalSolutionsPage = () => {
       "Контрол на качеството",
       "Гаранционно обслужване",
     ],
-    thumb: "/assets/img/services/thumb-2.jpg",
+    thumb: "/assets/img/services/usluga-polagane-na-beton.jpg",
   };
 
   return (

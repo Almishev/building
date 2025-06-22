@@ -2,6 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "@/components/Button";
 
+export const metadata = {
+  title: "Жилищни проекти - Шлайфане на бетон в София, Пловдив, Благоевград | Concrete Company",
+  description: "Шлайфане на бетон за жилищни проекти в София, Пловдив и Благоевград. Специализирани решения за апартаменти, къщи и гаражи.",
+  keywords: "жилищни проекти, апартаменти, къщи, гаражи, бетонови подове, шлайфане на бетон, София, Пловдив, Благоевград",
+  alternates: {
+    canonical: '/projects/residential-projects',
+  },
+};
+
 const ResidentialProjectsPage = () => {
   return (
     <section className="py-12 xl:py-24">

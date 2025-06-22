@@ -6,16 +6,17 @@ import Button from "./Button";
 import Link from "next/link";
 
 import {
-  PiWrenchFill,
-  PiUserGearFill,
-  PiScrewdriverFill,
+  PiWarehouseFill,
+  PiSparkleFill,
+  PiPaintRollerFill,
+  PiPackageFill,
 } from "react-icons/pi";
 import Pretitle from "./Pretitle";
 
 const serviceData = [
   {
     name: "Хеликоптери",
-    icon: <PiUserGearFill />,
+    icon: <PiWarehouseFill />,
     title: "Хеликоптери с оператор (двойни)",
     description:
       "Нашите мощни хеликоптери с оператор са предназначени за обработка на големи индустриални площи. Те осигуряват несравнима производителност и перфектно гладка повърхност.",
@@ -30,12 +31,12 @@ const serviceData = [
     ],
     thumbs: [
       { url: "/assets/img/services/ride-on-trowel.jpg" },
-      { url: "/assets/img/services/thumb-1.jpg" },
+      { url: "/assets/img/services/operator-shlaifane-na-beton.jpg" },
     ],
   },
   {
     name: "Ръчни машини",
-    icon: <PiWrenchFill />,
+    icon: <PiSparkleFill />,
     title: "Ръчноводими шлайф машини",
     description:
       "За по-малки площи, ръбове и труднодостъпни места използваме прецизни ръчноводими машини. Те гарантират внимание към детайла и безупречен финиш навсякъде.",
@@ -50,12 +51,12 @@ const serviceData = [
     ],
     thumbs: [
       { url: "/assets/img/services/walk-behind-grinder.jpg" },
-      { url: "/assets/img/services/thumb-3.jpg" },
+      { url: "/assets/img/services/rychna-mashina-shlaifane-na-beton.jpg" },
     ],
   },
   {
     name: "Пердашки",
-    icon: <PiScrewdriverFill />,
+    icon: <PiPaintRollerFill />,
     title: "Ръчноводими пердашки машини",
     description:
       "За финалната обработка на прясно положен бетон използваме единични пердашки. Те са идеални за по-малки до средни площи, както и за достигане на места, недостъпни за големите хеликоптери, осигурявайки перфектно гладък и уплътнен завършек.",
@@ -70,12 +71,12 @@ const serviceData = [
     ],
     thumbs: [
       { url: "/assets/img/services/perdashka-za-beton.webp" },
-      { url: "/assets/img/services/thumb-6.jpg" },
+      { url: "/assets/img/services/perdashki-za-shlaifane-na-beton.jpg" },
     ],
   },
   {
     name: "Решения",
-    icon: <PiWrenchFill />,
+    icon: <PiPackageFill />,
     title: "Цялостни решения за индустриални подове",
     description:
       "От първоначалната подготовка до финалното запечатване, ние предлагаме цялостни решения, съобразени с вашите нужди и спецификата на обекта. Доверете се на нашия опит.",
@@ -89,8 +90,8 @@ const serviceData = [
       "Гаранционно обслужване",
     ],
     thumbs: [
-      { url: "/assets/img/services/thumb-2.jpg" },
       { url: "/assets/img/services/thumb-4.jpg" },
+      { url: "/assets/img/services/thumb-6.jpg" },
     ],
   },
 ];
@@ -179,7 +180,11 @@ const Services = () => {
                             key={index}
                             className="relative w-[140px] xl:w-[200px] h-[140px] xl:h-[200px]"
                           >
-                            <Image src={thumb.url} fill alt="" />
+                            <Image 
+                              src={thumb.url} 
+                              fill 
+                              alt={`${item.title} - ${index === 0 ? 'Основна снимка' : 'Допълнителна снимка'}`}
+                            />
                           </div>
                         ))}
                       </div>

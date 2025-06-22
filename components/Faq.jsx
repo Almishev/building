@@ -1,3 +1,4 @@
+"use client";
 import Pretitle from "./Pretitle";
 import FaqItem from "./FaqItem";
 import { motion } from "framer-motion";
