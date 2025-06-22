@@ -22,7 +22,7 @@ const IndustrialHallsPage = () => {
           {/* Image */}
           <div className="flex-1 flex items-center justify-center">
             <Image
-              src="/assets/img/work/logo.png" // Placeholder image
+              src="/assets/img/logo.png" // Placeholder image
               width={550}
               height={450}
               alt="Шлайфан бетон в индустриално хале"
