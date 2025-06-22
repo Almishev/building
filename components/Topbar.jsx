@@ -29,8 +29,8 @@ const Topbar = () => {
               </div>
               <p className="font-medium text-primary">
               <a href="mailto:infoconcretecompany@gmail.com" className="hover:text-white transition-colors">
-      infoconcretecompany@gmail.com
-    </a>
+                infoconcretecompany@gmail.com
+                </a>
               </p>
             </div>
           </div>
