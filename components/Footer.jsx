@@ -37,41 +37,56 @@ const Footer = () => {
           </div>
           {/* contact */}
           <div className="flex-1 text-border">
-            <h4 className="h4 text-white mb-10">Контакт</h4>
+            <h4 className="h4 text-white mb-10">Обекти</h4>
             <ul className="flex flex-col gap-6">
               <li className="flex items-center gap-4">
                 <RiMapPin2Fill className="text-accent text-xl" />
-                <p>1250 Brickstone Ave, US</p>
+                <p>Работим из цялата страна</p>
               </li>
               <li className="flex items-center gap-4">
                 <RiPhoneFill className="text-accent text-xl" />
-                <p>0894320214</p>
+                <a href="tel:0894320214" className="hover:text-white transition-colors">
+                     0894320214
+                </a>
               </li>
               <li className="flex items-center gap-4">
                 <RiMailFill className="text-accent text-xl" />
-                <p>email@urbanbuild.com</p>
+                 <a href="mailto:infoconcretecompany@gmail.com" className="hover:text-white transition-colors">
+                    infoconcretecompany@gmail.com
+                 </a>
+              
               </li>
             </ul>
           </div>
           {/* newsletter */}
           <div className="flex-1 text-border">
-  <h4 className="h4 text-white mb-10">Бюлетин</h4>
-  <p className="mb-9">
-    Абонирайте се за нашия бюлетин, за да получавате актуална информация
-    за нови технологии, завършени проекти и съвети за поддръжка на бетонни подове.
-  </p>
-  {/* input */}
-  <div className="relative max-w-[370px]">
-    <input
-      type="text"
-      placeholder="Въведете вашия имейл" // Променен placeholder
-      className="bg-[#222427] h-16 w-full pl-7 rounded-none outline-none flex items-center"
-    />
-    <button className="bg-accent w-12 h-12 absolute right-2 top-2 bottom-2 text-primary text-xl flex items-center justify-center">
-      <RiArrowRightLine />
-    </button>
-  </div>
-</div>
+            <h4 className="h4 text-white mb-10">Бюлетин</h4>
+            <p className="mb-9">
+              Абонирайте се за нашия бюлетин, за да получавате актуална информация
+              за нови технологии, завършени проекти и съвети за поддръжка на бетонни подове.
+            </p>
+            {/* Form */}
+            <form 
+              action="https://docs.google.com/forms/d/e/1FAIpQLSeWR8KnMrnkIK2NrKhkwZizFIUHTACLQqGeopyS1mlz46ANIQ/formResponse"
+              method="POST"
+              target="_blank" 
+            >
+              <div className="relative max-w-[370px]">
+                <input
+                  type="email"
+                  name="entry.1542597407" 
+                  placeholder="Въведете вашия имейл" 
+                  required
+                  className="bg-[#222427] h-16 w-full pl-7 rounded-none outline-none flex items-center"
+                />
+                <button 
+                  type="submit"
+                  className="bg-accent w-12 h-12 absolute right-2 top-2 bottom-2 text-primary text-xl flex items-center justify-center">
+                  <RiArrowRightLine />
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
       {/* copyright */}

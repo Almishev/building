@@ -16,14 +16,22 @@ const Topbar = () => {
               <div className="w-8 h-8 bg-primary text-white flex items-center justify-center">
                 <RiPhoneFill />
               </div>
-              <p className="font-medium text-primary">0894320214</p>
+              <p className="font-medium text-primary">
+              <a href="tel:0894320214" className="hover:text-white transition-colors">
+                     0894320214
+                </a>
+              </p>
             </div>
             {/* mail */}
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 bg-primary text-white flex items-center justify-center">
                 <RiMailFill />
               </div>
-              <p className="font-medium text-primary">email@gmail.com</p>
+              <p className="font-medium text-primary">
+              <a href="mailto:infoconcretecompany@gmail.com" className="hover:text-white transition-colors">
+      infoconcretecompany@gmail.com
+    </a>
+              </p>
             </div>
           </div>
           {/* socials */}

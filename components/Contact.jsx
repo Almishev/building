@@ -39,7 +39,10 @@ const Contact = () => {
                     </h5>
                     <p className="mb-4">Нашият екип е на ваше разположение.</p>
                     <p className="font-semibold text-primary">
-                      office@concrete-company.bg
+                      <a href="mailto:infoconcretecompany@gmail.com" className="hover:text-orange-500 transition-colors">
+                         infoconcretecompany@gmail.com
+                       </a>
+
                     </p>
                   </div>
                 </div>
@@ -50,11 +53,11 @@ const Contact = () => {
                   </div>
                   <div>
                     <h5 className="text-[22px] font-semibold font-primary leading-none mb-2">
-                      Офис
+                    Нашата база
                     </h5>
-                    <p className="mb-4">Заповядайте в нашия офис.</p>
+                    
                     <p className="font-semibold text-primary">
-                      гр. София, бул. България №1
+                      Работим из цялата страна
                     </p>
                   </div>
                 </div>
@@ -67,9 +70,11 @@ const Contact = () => {
                     <h5 className="text-[22px] font-semibold font-primary leading-none mb-2">
                       Телефон
                     </h5>
-                    <p className="mb-4">Понеделник - Петък, от 8:00 до 17:00 ч.</p>
+                    <p className="mb-4">Понеделник - Петък, от 7:00 до 19:00</p>
                     <p className="font-semibold text-primary">
-                      0894320214
+                      <a href="tel:0894320214" className="hover:text-orange-500 transition-colors">
+                        0894320214
+                      </a>
                     </p>
                   </div>
                 </div>

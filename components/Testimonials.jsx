@@ -5,6 +5,7 @@ import Slider from "./Slider";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "@/variants";
+import Link from "next/link";
 
 const Testimonials = () => {
   return (
@@ -26,7 +27,9 @@ const Testimonials = () => {
               частни домове до големи търговски площи. Вижте как превърнахме
               техните идеи в реалност.
             </p>
+            <Link href="#contact">
             <Button text="Работете с нас" />
+            </Link>
           </motion.div>
           {/* img & slider */}
           <motion.div

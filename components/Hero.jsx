@@ -1,7 +1,9 @@
 import Button from "./Button";
+import Link from "next/link";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "@/variants";
+
 
 const Hero = () => {
   return (
@@ -38,7 +40,9 @@ const Hero = () => {
             whileInView="show"
             viewport={{ once: false, amount: 0.8 }}
           >
+          <Link href='/#projects'>
             <Button text="Вижте нашите проекти" />
+            </Link>
           </motion.div>
         </div>
       </div>
