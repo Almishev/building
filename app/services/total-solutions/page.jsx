@@ -66,7 +66,7 @@ const TotalSolutionsPage = () => {
         
         <div className="text-center">
             <Link href="/#contact">
-              <Button text="Поискайте консултация" />
+              <Button text="Поискайте оферта" />
             </Link>
         </div>
       </div>
