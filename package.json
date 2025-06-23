@@ -2,7 +2,6 @@
   "name": "urbanbuild",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Almishev.github.io/building",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
