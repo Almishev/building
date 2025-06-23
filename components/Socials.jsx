@@ -16,10 +16,13 @@ const socials = [
     icon: <RiYoutubeFill />,
     path: "https://www.youtube.com/@concretecompany-z9x7x",
   },
+  /*
   {
     icon: <RiTwitterXFill />,
     path: "",
   },
+  */
+
   {
     icon: <RiInstagramFill />,
     path: "",
