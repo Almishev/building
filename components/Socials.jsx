@@ -10,7 +10,7 @@ import {
 const socials = [
   {
     icon: <RiFacebookFill />,
-    path: "",
+    path: "https://www.facebook.com/concretecompanybg",
   },
   {
     icon: <RiYoutubeFill />,
@@ -25,7 +25,7 @@ const socials = [
 
   {
     icon: <RiInstagramFill />,
-    path: "",
+    path: "https://www.instagram.com/concretecompanybg/",
   },
 ];
 
