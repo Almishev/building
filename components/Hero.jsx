@@ -12,11 +12,12 @@ const Hero = () => {
     <section className="h-[70vh] relative overflow-hidden">
       {/* Background Image */}
       <Image
-        src="/assets/img/hero/bg.jpg"
+        src="https://res.cloudinary.com/dwlmmwwyr/image/upload/v1750942128/bg_brbhgl.png"
         alt="Професионално шлайфане на бетон в София, Пловдив и Благоевград"
         fill
         className="object-cover"
         priority
+        sizes="(max-width: 768px) 100vw, 1920px"
       />
       {/* overlay */}
       <div className="absolute inset-0 bg-gradient-to-l from-black/0 via-black/50 to-black/70 z-10"></div>

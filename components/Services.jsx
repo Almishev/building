@@ -30,8 +30,8 @@ const serviceData = [
       "Бързо изпълнение",
     ],
     thumbs: [
-      { url: "/assets/img/services/ride-on-trowel.jpg" },
-      { url: "/assets/img/services/operator-shlaifane-na-beton.jpg" },
+      { url: "https://res.cloudinary.com/dwlmmwwyr/image/upload/v1750942754/ride-on-trowel_yqcf5v.jpg" },
+      { url: "https://res.cloudinary.com/dwlmmwwyr/image/upload/v1750942753/operator-shlaifane-na-beton_axtlh6.jpg" },
     ],
   },
   {
