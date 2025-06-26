@@ -62,7 +62,7 @@ const About = () => {
               {/* bg */}
               <div className="hidden xl:flex w-[444px] h-[493px] bg-accent absolute -top-4 -left-4 -z-10"></div>
               <Image
-                src={"https://res.cloudinary.com/dwlmmwwyr/image/upload/v1750942754/thumb-6_u7hrzr.jpg"}
+                src={"https://res.cloudinary.com/dwlmmwwyr/image/upload/f_auto,q_auto,w_444,h_492,c_fill/thumb-6_u7hrzr.jpg"}
                 width={444}
                 height={492}
                 alt="Concrete Company - Парапанов груп - Професионално шлайфане на бетон в София, Пловдив, Благоевград"
