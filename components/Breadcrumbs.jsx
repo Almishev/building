@@ -22,35 +22,69 @@ const Breadcrumbs = () => {
     "decorative-coatings": "Декоративни покрития",
   };
 
+  // Генерираме BreadcrumbList schema.org JSON-LD
+  const breadcrumbList = [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Начало",
+      item: "https://www.concretecompany.online/"
+    },
+    ...pathSegments.map((segment, idx) => {
+      const url =
+        "https://www.concretecompany.online/" +
+        pathSegments.slice(0, idx + 1).join("/");
+      return {
+        "@type": "ListItem",
+        position: idx + 2,
+        name: breadcrumbMap[segment] || segment,
+        item: url.endsWith("/") ? url : url + "/"
+      };
+    })
+  ];
+
   return (
-    <nav className="bg-gray-50 py-4">
-      <div className="container mx-auto">
-        <ol className="flex items-center space-x-2 text-sm">
-          <li>
-            <Link href="/" className="text-primary hover:text-accent transition-colors">
-              Начало
-            </Link>
-          </li>
-          {pathSegments.map((segment, index) => (
-            <li key={index} className="flex items-center">
-              <span className="mx-2 text-gray-400">/</span>
-              {index === pathSegments.length - 1 ? (
-                <span className="text-gray-600 font-medium">
-                  {breadcrumbMap[segment] || segment}
-                </span>
-              ) : (
-                <Link
-                  href={`/${pathSegments.slice(0, index + 1).join("/")}`}
-                  className="text-primary hover:text-accent transition-colors"
-                >
-                  {breadcrumbMap[segment] || segment}
-                </Link>
-              )}
+    <>
+      <nav className="bg-gray-50 py-4">
+        <div className="container mx-auto">
+          <ol className="flex items-center space-x-2 text-sm">
+            <li>
+              <Link href="/" className="text-primary hover:text-accent transition-colors">
+                Начало
+              </Link>
             </li>
-          ))}
-        </ol>
-      </div>
-    </nav>
+            {pathSegments.map((segment, index) => (
+              <li key={index} className="flex items-center">
+                <span className="mx-2 text-gray-400">/</span>
+                {index === pathSegments.length - 1 ? (
+                  <span className="text-gray-600 font-medium">
+                    {breadcrumbMap[segment] || segment}
+                  </span>
+                ) : (
+                  <Link
+                    href={`/${pathSegments.slice(0, index + 1).join("/")}`}
+                    className="text-primary hover:text-accent transition-colors"
+                  >
+                    {breadcrumbMap[segment] || segment}
+                  </Link>
+                )}
+              </li>
+            ))}
+          </ol>
+        </div>
+      </nav>
+      {/* Schema.org BreadcrumbList JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: breadcrumbList
+          })
+        }}
+      />
+    </>
   );
 };
 

@@ -30,7 +30,7 @@ const HandGrindersPage = () => {
   return (
     <section className="py-12 xl:py-24">
       <div className="container mx-auto">
-        <h1 className="text-3xl font-bold mb-6 text-center">{service.title}</h1>
+        <h1 className="h1 text-center mb-6">Ръчноводими шлайф машини за бетон</h1>
         <div className="flex flex-col xl:flex-row gap-12">
           {/* Image */}
           <div className="flex-1 flex items-center justify-center">
@@ -44,7 +44,7 @@ const HandGrindersPage = () => {
           </div>
           {/* Text */}
           <div className="flex-1">
-            <h2 className="text-2xl font-semibold mb-4">Прецизност във всеки детайл</h2>
+            <h2 className="h2 mb-4">Прецизност във всеки детайл</h2>
             <p className="text-muted-foreground mb-6">{service.description}</p>
             <p className="text-muted-foreground mb-6">
               Тези универсални машини са незаменим помощник при обработката на площи около колони, до стени, в тесни коридори или при ремонтни дейности. С тяхна помощ можем да подготвим основи, да премахнем стари настилки и да полираме до съвършенство дори най-малките участъци.
@@ -69,9 +69,45 @@ const HandGrindersPage = () => {
               <Button text="Свържете се с нас" />
             </Link>
         </div>
+
+        {/* SEO текст за ръчноводими шлайф машини */}
+        <section className="mt-12 max-w-3xl mx-auto text-base text-gray-700 leading-relaxed">
+          <h2 className="h2 mb-4">Ръчноводими шлайф машини – гъвкавост и прецизност</h2>
+          <p>
+            Ръчноводимите шлайф машини са незаменим помощник при обработката на труднодостъпни места, ъгли, ръбове и малки площи, където големите машини не могат да достигнат. Те позволяват изключително прецизно шлайфане и полиране, което е от съществено значение за постигане на безупречен финиш и детайлна обработка на всяка настилка.
+          </p>
+          <p className="mt-4">
+            Благодарение на своята компактност и маневреност, ръчноводимите машини са идеални за ремонтни дейности, подготовка на основи, премахване на стари покрития и обработка на декоративни бетони и мозайки. Те осигуряват контрол и гъвкавост, които са необходими за висококачествен резултат във всякакви условия – от жилищни гаражи и коридори до обществени и търговски пространства.
+          </p>
+          <p className="mt-4">
+            Използването на професионални ръчноводими шлайф машини гарантира не само отлична визия, но и дълготрайност и лесна поддръжка на подовата настилка. Доверете се на нашия опит за постигане на перфектен резултат дори в най-сложните и специфични проекти.
+          </p>
+        </section>
       </div>
     </section>
   );
 };
 
 export default HandGrindersPage; 
+
+<head>
+  <title>{metadata.title}</title>
+  <meta name="description" content={metadata.description} />
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Ръчноводими шлайф машини за бетон",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Concrete Company - Парапанов груп"
+        },
+        "areaServed": "София, Пловдив, Благоевград",
+        "description": metadata.description,
+        "serviceType": "Шлайфане на бетон с ръчноводими машини"
+      })
+    }}
+  />
+</head> 

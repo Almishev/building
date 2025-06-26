@@ -15,27 +15,28 @@ const DecorativeCoatingsPage = () => {
   return (
     <section className="py-12 xl:py-24">
       <div className="container mx-auto">
-        <h1 className="text-3xl font-bold mb-6">
-          Декоративни Настилки: Изкуство под Краката Ви
+        <h1 className="h1 text-center mb-6">
+          Декоративни покрития от бетон
         </h1>
-        <div className="flex flex-col xl:flex-row gap-8">
+        <div className="flex flex-col xl:flex-row gap-12">
           {/* Image */}
-          <div className="flex-1">
+          <div className="flex-1 flex items-center justify-center">
             <Image
               src="/assets/logo.png" // Placeholder image
               width={550}
               height={450}
-              alt="Декоративна подова настилка от шлайфан бетон"
-              className="rounded-lg object-cover"
+              alt="Декоративни покрития от бетон"
+              className="rounded-lg object-cover shadow-lg"
             />
           </div>
           {/* Text */}
           <div className="flex-1">
-            <p className="text-lg text-muted-foreground mb-4">
-              Кой казва, че бетонът трябва да бъде сив и скучен? Съвременните технологии ни позволяват да превърнем шлайфания бетон в истинско произведение на изкуството. Чрез добавяне на оцветители, специални агрегати и различни техники на полиране, можем да създадем уникални по рода си подови настилки.
+            <h2 className="h2 mb-4">Артистичност и индивидуален стил</h2>
+            <p className="text-muted-foreground mb-4">
+              Декоративните покрития от бетон са отличен избор за създаване на уникални и впечатляващи интериорни и екстериорни пространства. Чрез различни техники и цветове, обикновеният бетон се превръща в истинско произведение на изкуството, което подчертава индивидуалността на всеки обект.
             </p>
-            <p className="text-lg text-muted-foreground mb-6">
-              От ефект "терацо" до огледален блясък в различни цветове, "Concrete Company" може да реализира вашите най-смели дизайнерски идеи, комбинирайки ги с безкомпромисната здравина на бетона.
+            <p className="text-muted-foreground mb-6">
+              Concrete Company предлага богато разнообразие от декоративни решения – от цветни настилки до артистични мозайки и текстури. Доверете се на нашия опит за под, който ще бъде не само функционален, но и истински акцент във вашия дом или бизнес.
             </p>
           </div>
         </div>
@@ -66,8 +67,44 @@ const DecorativeCoatingsPage = () => {
           <Button text="Обратно към проектите" />
         </Link>
       </div>
+
+      {/* SEO текст за декоративни покрития */}
+      <section className="mt-16 max-w-3xl mx-auto text-base text-gray-700 leading-relaxed">
+        <h2 className="h2 mb-4">Декоративни покрития – артистичност и индивидуален стил</h2>
+        <p>
+          Декоративните покрития от бетон са отличен избор за създаване на уникални и впечатляващи интериорни и екстериорни пространства. Чрез различни техники и цветове, обикновеният бетон се превръща в истинско произведение на изкуството, което подчертава индивидуалността на всеки обект.
+        </p>
+        <p className="mt-4">
+          Concrete Company предлага богато разнообразие от декоративни решения – от цветни настилки до артистични мозайки и текстури. Доверете се на нашия опит за под, който ще бъде не само функционален, но и истински акцент във вашия дом или бизнес.
+        </p>
+      </section>
     </section>
   );
 };
 
-export default DecorativeCoatingsPage; 
+export default DecorativeCoatingsPage;
+
+<head>
+  <title>{metadata.title}</title>
+  <meta name="description" content={metadata.description} />
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Project",
+        "name": "Декоративни покрития",
+        "description": metadata.description,
+        "image": "https://www.concretecompany.online/assets/img/work/dekorativni-nastilki.jpg",
+        "location": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "София, Пловдив, Благоевград",
+            "addressCountry": "BG"
+          }
+        }
+      })
+    }}
+  />
+</head> 

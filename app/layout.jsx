@@ -89,6 +89,30 @@ export default function RootLayout({ children }) {
         <FaqSchema />
         <ContactSchema />
         <WebsiteSchema />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Concrete Company - Парапанов груп",
+              "image": "https://www.concretecompany.online/assets/logo.png",
+              "url": "https://www.concretecompany.online",
+              "telephone": "+359 88 123 4567",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "ул. Георги Раковски 1",
+                "addressLocality": "Гоце Делчев",
+                "addressCountry": "BG"
+              },
+              "openingHours": "Mo-Fr 09:00-18:00",
+              "sameAs": [
+                "https://www.facebook.com/concretecompanybg",
+                "https://www.instagram.com/concretecompanybg/"
+              ]
+            })
+          }}
+        />
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body className={`${dmSans.variable} ${barlow.variable} antialiased`}>

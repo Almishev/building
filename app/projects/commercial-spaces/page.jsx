@@ -15,52 +15,53 @@ const CommercialSpacesPage = () => {
   return (
     <section className="py-12 xl:py-24">
       <div className="container mx-auto">
-        <h1 className="text-3xl font-bold mb-6">
-          Елегантни и Устойчиви Решения за Търговски Площи
+        <h1 className="h1 text-center mb-6">
+          Шлайфан бетон за търговски площи
         </h1>
-        <div className="flex flex-col xl:flex-row gap-8">
+        <div className="flex flex-col xl:flex-row gap-12">
           {/* Image */}
-          <div className="flex-1">
+          <div className="flex-1 flex items-center justify-center">
             <Image
               src="/assets/logo.png" // Placeholder image
               width={550}
               height={450}
-              alt="Шлайфан бетон в търговски обект"
-              className="rounded-lg object-cover"
+              alt="Шлайфан бетон в търговски площи"
+              className="rounded-lg object-cover shadow-lg"
             />
           </div>
           {/* Text */}
           <div className="flex-1">
-            <p className="text-lg text-muted-foreground mb-4">
-              Подът в един магазин, шоурум или ресторант е първото нещо, което клиентите забелязват. Той трябва да бъде не само красив и представителен, но и изключително издръжлив, за да устои на постоянния човекопоток. Шлайфаният и полиран бетон е модерното решение, което съчетава естетика и функционалност.
+            <h2 className="h2 mb-4">Стил и функционалност за вашия бизнес</h2>
+            <p className="text-muted-foreground mb-4">
+              Търговските площи изискват настилка, която да съчетава представителна визия, здравина и лесна поддръжка. Шлайфаният бетон е идеалното решение за магазини, шоуруми и офиси, където дизайнът и практичността са еднакво важни.
             </p>
-            <p className="text-lg text-muted-foreground mb-6">
-              Ние от "Concrete Company" създаваме подове, които впечатляват с блясък и стил, като същевременно осигуряват лесна поддръжка и дълготрайност, необходими за всеки успешен бизнес.
+            <p className="text-muted-foreground mb-6">
+              "Concrete Company" предлага индивидуални решения за всеки търговски обект – от избора на цвят и финиш до изпълнението в кратки срокове и с минимално прекъсване на работния процес.
             </p>
           </div>
         </div>
 
         <div className="my-12">
-          <h2 className="text-2xl font-semibold mb-4">Защо шлайфан бетон за вашия бизнес?</h2>
+          <h2 className="h2 text-center mb-8">Защо шлайфан бетон за вашия бизнес?</h2>
           <ul className="list-disc list-inside space-y-2">
             <li>
-              <strong>Представителна визия:</strong>
+              <span className="font-bold">Представителна визия:</span>
               Създава модерна и луксозна атмосфера, която привлича клиенти.
             </li>
             <li>
-              <strong>Неограничени дизайнерски възможности:</strong>
+              <span className="font-bold">Неограничени дизайнерски възможности:</span>
               Може да се оцветява и обработва за постигане на уникални ефекти.
             </li>
             <li>
-              <strong>Изключителна хигиеничност:</strong>
+              <span className="font-bold">Изключителна хигиеничност:</span>
               Без фуги, където да се събира мръсотия, подът се почиства перфектно.
             </li>
             <li>
-              <strong>Устойчивост на износване:</strong>
+              <span className="font-bold">Устойчивост на износване:</span>
               Идеален за зони с висок трафик, без да се притеснявате от износване или надраскване.
             </li>
             <li>
-              <strong>Оптимизация на разходите:</strong>
+              <span className="font-bold">Оптимизация на разходите:</span>
               Дългосрочно решение, което спестява средства от ремонти и скъпи поддръжки.
             </li>
           </ul>
@@ -70,8 +71,44 @@ const CommercialSpacesPage = () => {
           <Button text="Обратно към проектите" />
         </Link>
       </div>
+
+      {/* SEO текст за търговски площи */}
+      <section className="mt-16 max-w-3xl mx-auto text-base text-gray-700 leading-relaxed">
+        <h2 className="h2 mb-4">Търговски площи – стил, функционалност и лесна поддръжка</h2>
+        <p>
+          В търговските обекти подовата настилка трябва да съчетава естетика, здравина и удобство за клиентите. Шлайфаният и полиран бетон е идеален избор за магазини, шоуруми и офиси, където визията и практичността са еднакво важни. Нашите решения осигуряват модерен вид, лесно почистване и устойчивост на интензивно натоварване.
+        </p>
+        <p className="mt-4">
+          Concrete Company предлага индивидуален подход към всеки търговски проект – от избора на цвят и финиш до изпълнението в кратки срокове и с минимално прекъсване на работния процес. Доверете се на нашия опит за под, който ще впечатли вашите клиенти и ще служи безотказно години наред.
+        </p>
+      </section>
     </section>
   );
 };
 
-export default CommercialSpacesPage; 
+export default CommercialSpacesPage;
+
+<head>
+  <title>{metadata.title}</title>
+  <meta name="description" content={metadata.description} />
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Project",
+        "name": "Търговски площи",
+        "description": metadata.description,
+        "image": "https://www.concretecompany.online/assets/img/work/targovski-ploshti.jpg",
+        "location": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "София, Пловдив, Благоевград",
+            "addressCountry": "BG"
+          }
+        }
+      })
+    }}
+  />
+</head> 

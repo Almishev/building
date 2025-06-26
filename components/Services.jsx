@@ -221,6 +221,14 @@ const Services = () => {
           </Tabs>
         </motion.div>
       </div>
+      <div className="flex flex-col items-center mt-12">
+        <p className="mb-6 max-w-2xl text-center text-gray-700">
+          Concrete Company предлага пълен спектър от услуги за шлайфане, полиране и обработка на бетонни настилки – от индустриални халета и търговски площи до жилищни и декоративни проекти. Доверете се на нашия опит за оптимално решение, независимо от мащаба и спецификата на вашия обект.
+        </p>
+        <Link href="/services">
+          <Button text="Вижте всички услуги" />
+        </Link>
+      </div>
     </section>
   );
 };

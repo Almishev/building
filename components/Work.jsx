@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Pretitle from "./Pretitle";
+import Button from "./Button";
 
 import { RiArrowRightUpLine, RiCheckboxCircleFill } from "react-icons/ri";
 
@@ -95,6 +96,14 @@ const Work = () => {
           );
         })}
       </motion.div>
+      <div className="flex flex-col items-center mt-12">
+        <p className="mb-6 max-w-2xl text-center text-gray-700">
+          Concrete Company реализира проекти за индустриални халета, търговски площи, жилищни сгради и декоративни настилки в София, Пловдив, Благоевград и цялата страна. Нашият екип гарантира качество, дълготрайност и индивидуален подход към всеки обект – от концепцията до финалния резултат. Разгледайте нашите реализирани проекти и се убедете в професионализма ни!
+        </p>
+        <Link href="/projects">
+          <Button text="Вижте всички проекти" />
+        </Link>
+      </div>
     </div>
   );
 };

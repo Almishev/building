@@ -15,27 +15,28 @@ const ResidentialProjectsPage = () => {
   return (
     <section className="py-12 xl:py-24">
       <div className="container mx-auto">
-        <h1 className="text-3xl font-bold mb-6">
-          Шлайфан Бетон: Модерният Избор за Вашия Дом
+        <h1 className="h1 text-center mb-6">
+          Шлайфан бетон за жилищни проекти
         </h1>
-        <div className="flex flex-col xl:flex-row gap-8">
+        <div className="flex flex-col xl:flex-row gap-12">
           {/* Image */}
-          <div className="flex-1">
+          <div className="flex-1 flex items-center justify-center">
             <Image
               src="/assets/logo.png" // Placeholder image
               width={550}
               height={450}
-              alt="Шлайфан бетон в модерен интериор"
-              className="rounded-lg object-cover"
+              alt="Шлайфан бетон в жилищни проекти"
+              className="rounded-lg object-cover shadow-lg"
             />
           </div>
           {/* Text */}
           <div className="flex-1">
-            <p className="text-lg text-muted-foreground mb-4">
-              Шлайфаният бетон отдавна не е запазена марка само за индустрията. Все повече собственици на жилища и интериорни дизайнери го избират заради неговата минималистична визия, изключителна здравина и лесна поддръжка. Той е перфектното решение за гаражи, мазета, тераси, а също и за модерни интериори в стил "лофт".
+            <h2 className="h2 mb-4">Комфорт и стил за вашия дом</h2>
+            <p className="text-muted-foreground mb-4">
+              Шлайфаният бетон е все по-предпочитан избор за модерни домове, апартаменти и гаражи. Той съчетава издръжливост, лесна поддръжка и възможност за персонализация според вкуса на всеки клиент.
             </p>
-            <p className="text-lg text-muted-foreground mb-6">
-              "Concrete Company" може да превърне всяка бетонна повърхност във вашия дом в гладко, стилно и практично подово покритие, което ще ви служи вярно години наред.
+            <p className="text-muted-foreground mb-6">
+              Concrete Company изпълнява жилищни проекти с внимание към детайла и индивидуалните изисквания на клиента. Доверете се на нашия екип за под, който ще бъде едновременно красив, здрав и лесен за поддръжка години наред.
             </p>
           </div>
         </div>
@@ -66,8 +67,44 @@ const ResidentialProjectsPage = () => {
           <Button text="Обратно към проектите" />
         </Link>
       </div>
+
+      {/* SEO текст за жилищни проекти */}
+      <section className="mt-16 max-w-3xl mx-auto text-base text-gray-700 leading-relaxed">
+        <h2 className="h2 mb-4">Жилищни проекти – комфорт, стил и индивидуалност</h2>
+        <p>
+          Шлайфаният бетон е все по-предпочитан избор за модерни домове, апартаменти и гаражи. Той съчетава издръжливост, лесна поддръжка и възможност за персонализация според вкуса на всеки клиент. Полираната повърхност придава усещане за простор и светлина, а разнообразието от цветове и финиши позволява уникален интериорен дизайн.
+        </p>
+        <p className="mt-4">
+          Concrete Company изпълнява жилищни проекти с внимание към детайла и индивидуалните изисквания на клиента. Доверете се на нашия екип за под, който ще бъде едновременно красив, здрав и лесен за поддръжка години наред.
+        </p>
+      </section>
     </section>
   );
 };
 
 export default ResidentialProjectsPage; 
+
+<head>
+  <title>{metadata.title}</title>
+  <meta name="description" content={metadata.description} />
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Project",
+        "name": "Жилищни проекти",
+        "description": metadata.description,
+        "image": "https://www.concretecompany.online/assets/img/work/jilishtni-proekti.jpg",
+        "location": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "София, Пловдив, Благоевград",
+            "addressCountry": "BG"
+          }
+        }
+      })
+    }}
+  />
+</head> 
