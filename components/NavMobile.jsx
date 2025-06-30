@@ -37,6 +37,10 @@ const links = [
     name: "контакти",
     path: "contact",
   },
+  {
+    name: "цени",
+    path: "prices",
+  },
 ];
 
 const NavMobile = () => {

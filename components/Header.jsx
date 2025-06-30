@@ -13,6 +13,7 @@ const links = [
   { name: "услуги", path: "/#services" },
   { name: "проекти", path: "/#projects" },
   { name: "контакти", path: "/#contact" },
+  { name: "цени", path: "/prices" },
 ];
 
 const Header = () => {
