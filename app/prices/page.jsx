@@ -40,4 +40,27 @@ export default function PricesPage() {
       <a href="tel:0894320214" className="inline-block bg-primary text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-primary-dark transition">Обадете се: 0894320214</a>
     </main>
   );
-} 
+}
+
+{/* Schema.org Article JSON-LD */}
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: 'Цени за шлайфане на бетон',
+      description: 'Научете как се формира цената за шлайфане на бетон. Вижте факторите, които влияят на цената, и защо качеството е инвестиция.',
+      datePublished: '2025-01-22',
+      author: {
+        '@type': 'Organization',
+        name: 'Concrete Company',
+        url: 'https://www.concretecompany.online'
+      },
+      mainEntityOfPage: {
+        '@type': 'WebPage',
+        '@id': 'https://www.concretecompany.online/prices'
+      }
+    })
+  }}
+/> 
