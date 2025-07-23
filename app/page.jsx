@@ -36,7 +36,7 @@ const Home = () => {
           <h2 className="text-3xl font-bold mb-4">Цени за шлайфане на бетон</h2>
           <p className="mb-4 text-lg">Между 5 и 20 лв на квадрат, в зависимост от много фактори.</p>
           <p className="mb-6 text-base text-gray-700">Цената за шлайфане на бетон се определя индивидуално за всеки обект. Влияят фактори като площ, състояние на бетона, желано ниво на полиране и достъпност. Винаги препоръчваме оглед и консултация за най-точна оферта. Инвестицията в качествено шлайфане гарантира дълготрайност, лесна поддръжка и отлична визия на пода.</p>
-          <a href="/prices" className="inline-block bg-primary text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-primary-dark transition">Вижте подробни цени</a>
+          <a href="/prices/" className="inline-block bg-primary text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-primary-dark transition">Вижте подробни цени</a>
         </div>
       </section>
     </div>
